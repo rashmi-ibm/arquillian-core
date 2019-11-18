@@ -18,6 +18,9 @@ cache:
   directories:
     - $HOME/.m2
 
+jdk:
+  - openjdk8
+
 before_install:
   - sed -i.bak -e 's|http://repo.maven.apache.org/maven2|https://repo.maven.apache.org/maven2|g' $HOME/.m2/settings.xml
   - BRANCH=${TRAVIS_PULL_REQUEST_BRANCH:-$TRAVIS_BRANCH}
