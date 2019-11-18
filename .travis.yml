@@ -1,4 +1,7 @@
 sudo: required
+os: linux
+arch:
+  - ppc64le
 services:
   - docker
 addons:
@@ -9,8 +12,6 @@ addons:
        - git
 
 language: java
-os: linux
-arch: ppc64le
 jdk:
   - openjdk8
 cache:
